@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #0da5e0;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav .logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Sección de Inicio */
+#inicio {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Sección de Libros */
+#libros {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.libros-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.libro {
+    width: 200px;
+    border: 1px solid #08d6d6;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.libro:hover {
+    transform: scale(1.05);
+}
+
+.libro img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: cover; /* Asegura que las imágenes mantengan proporción */
+}
+
+.libro h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.libro p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.libro button {
+    background-color: #08d6d6;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.libro button:hover {
+    background-color: #ac4ec9;
+}
+
+/* Sección de Sobre Nosotros */
+#sobre-nosotros {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.sobre-nosotros-img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Sección de Contacto */
+#contacto {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .libros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .libro {
+        width: 90%;
+    }
+}
+
+footer{
+    background-color: #0da5e0;
+    height: 50px;
+    text-align: center;
+    margin-top: 150px;
+}
